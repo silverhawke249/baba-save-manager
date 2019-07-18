@@ -1,6 +1,7 @@
 import copy
 import os
 import sys
+
 from PyQt5.QtWidgets import (QApplication, QWidget, QComboBox, QLabel, QLineEdit, QPushButton, QListWidget,
                              QTreeWidget, QTreeWidgetItem, QTableWidget, QTableWidgetItem, QGroupBox,
                              QHBoxLayout, QVBoxLayout, QGridLayout, QMessageBox)
@@ -139,7 +140,7 @@ class MainWindow(QWidget):
         with open(os.path.join(self.base_path, fname), 'r') as f:
             for line in f:
                 line = line.strip()
-                if line and line[0] == '[':
+                if line and line.startswith('[') and line.endswith(']'):
                     if key is not None:
                         data[key] = value
                     key = line[1:-1]
