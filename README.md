@@ -37,6 +37,8 @@ Each entry in `converts` has a corresponding entry under the "Level converts" se
 which notes down the level it contains and what it is transformed to.
 
 ## Changelog
+- v1.0.2
+  - Added a more robust section check, changed bundled PyQt version.
 - v1.0.1
   - Removed UPX compression.
 - v1.0
