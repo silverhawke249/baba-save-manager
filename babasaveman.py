@@ -154,7 +154,7 @@ class MainWindow(QWidget):
         world_names = [key for key in data.keys() if not key.endswith('convert') and not key.endswith('converts')
                        and not key.endswith('clears') and not key.endswith('prize') and not key.endswith('complete')
                        and not key.endswith('bonus')]
-        world_names.sort()
+        world_names.sort(key=lambda a: a.lower())
         save_dict = {}
         for wname in world_names:
             self.world_list.addItem(wname)
