@@ -1,5 +1,5 @@
-# Baba Save Manager
-Easy save manager for Baba Is You.
+# Baba Save Manager [OBSOLETE]
+Easy save manager for Baba Is You. Do not use with latest Baba Is You versions -- project is not maintained.
 
 This app requires Python 3 with the `PyQt5` package.
 
